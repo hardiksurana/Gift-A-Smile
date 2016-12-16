@@ -6,10 +6,10 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-    webkit-tap-highlight-color: #F05F40;
+    webkit-tap-highlight-color: #933;
 }
 hr {
-  border-color: #F05F40;
+  border-color: #933;
   border-width: 3px;
   max-width: 50px;
 }
@@ -31,7 +31,7 @@ a.active {
   outline: none;
 }
 a {
-  color: #F05F40;
+  color: #933;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -40,7 +40,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #F05F40;
+  color: #933;
 }
 h1,
 h2,
@@ -62,7 +62,7 @@ p.heading{
 }
 
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #933;
 }
 .bg-dark {
   background-color: #222222;
@@ -114,7 +114,7 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
+  color: #933;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   font-weight: 700;
   text-transform: uppercase;
@@ -138,11 +138,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+  color: #933;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #933 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -155,11 +155,11 @@ aside {
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
-    color: black;
+    color: rgba(255, 255, 255, 0.7);
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: #F05F40;
+    color: white;
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
@@ -174,7 +174,7 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
+    color: #933;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -187,63 +187,127 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: #933;
   }
 }
 
 header {
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center center;
-    text-align: center;
-    color: white;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    /*background-image: url('../img/bg.jpg');*/
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
 }
-
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
 header .header-content .header-content-inner h1 {
   font-weight: 700;
+  /*text-transform: uppercase;*/
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 20px;
 }
-
 header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
-
 header .header-content .header-content-inner p {
   font-weight: 300;
+  /*color: rgba(255, 255, 255, 0.7);*/
   color: white;
   font-size: 16px;
+  margin-bottom: 50px;
 }
-
 @media (min-width: 768px) {
   header {
     min-height: 100%;
   }
-
   header .header-content {
+<<<<<<< HEAD
 
+=======
+    position: absolute;
+    top: 50%;
+>>>>>>> 8bd57e26f6a684aa337e0a3e741686d1ea210b3f
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
   }
-
   header .header-content .header-content-inner {
-    margin: 0 auto;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
-
   header .header-content .header-content-inner p {
     font-size: 18px;
     max-width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
   }
 }
 
@@ -251,40 +315,34 @@ header .header-content .header-content-inner p {
   max-width: 400px;
   margin: 50px auto 0;
 }
-
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0;
   }
 }
-
 .service-box p {
   margin-bottom: 0;
 }
 
 #requirements{
-    background-color: #F05F40;
+    background-color: #933;
     color: white;
 }
 
 @media (min-width:992px) {
-    .col-md-4:nth-child(3n+1){
-        clear:left;
-    }
+    .col-md-4:nth-child(3n+1){clear:left;}
 }
 
 #requirements .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-
-#requirements .portfolio-item .portfolio-link {
+#portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-
 #requirements .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
@@ -294,11 +352,9 @@ header .header-content .header-content-inner p {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-
 #requirements .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
-
 #requirements .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   position: absolute;
   width: 100%;
@@ -309,16 +365,13 @@ header .header-content .header-content-inner p {
   margin-top: -12px;
   color: white;
 }
-
 #requirements .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
-
 #requirements .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #requirements .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
-
 #requirements .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
@@ -326,23 +379,19 @@ header .header-content .header-content-inner p {
   text-align: center;
   padding: 25px;
 }
-
 #requirements .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
 }
-
 #requirements .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
 }
-
 #requirements * {
   z-index: 2;
 }
-
 @media (min-width: 767px) {
   #requirements .portfolio-item {
     margin: 0 0 30px;
@@ -352,16 +401,13 @@ header .header-content .header-content-inner p {
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
-
 .text-primary {
-  color: #F05F40;
+  color: #933;
 }
-
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
-
 .btn-default {
   color: #222222;
   background-color: white;
@@ -388,13 +434,11 @@ header .header-content .header-content-inner p {
   background-color: #f2f2f2;
   border-color: #ededed;
 }
-
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   background-image: none;
 }
-
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
@@ -416,16 +460,14 @@ fieldset[disabled] .btn-default.active {
   background-color: white;
   border-color: white;
 }
-
 .btn-default .badge {
   color: white;
   background-color: #222222;
 }
-
 .btn-primary {
   color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #933;
+  border-color: #933;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -433,7 +475,6 @@ fieldset[disabled] .btn-default.active {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -444,13 +485,11 @@ fieldset[disabled] .btn-default.active {
   background-color: #ee4b28;
   border-color: #ed431f;
 }
-
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   background-image: none;
 }
-
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,
@@ -469,15 +508,13 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #933;
+  border-color: #933;
 }
-
 .btn-primary .badge {
-  color: #F05F40;
+  color: #933;
   background-color: white;
 }
-
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
@@ -485,7 +522,6 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .btn-xl {
   padding: 15px 30px;
   margin: 20px;
@@ -498,19 +534,19 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl .badge {
-  color: #F05F40;
+  color: #933;
   background-color: white;
 }
 
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #F05F40;
+  background: #933;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #F05F40;
+  background: #933;
 }
 img::selection {
   color: white;
@@ -525,63 +561,53 @@ img::-moz-selection {
   background-color: white;
   border-color: transparent;
 }
-
 .navbar-custom .navbar-brand {
-  color: #F05F40;
+  color: #933;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: #ed431f;
 }
-
 .navbar-custom .navbar-collapse {
   border-color: white;
 }
-
 .navbar-custom .navbar-toggle {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #933;
+  border-color: #933;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
 }
-
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #F05F40;
+  background-color: #933;
 }
-
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: black;
+  color: white;
 }
-
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #F05F40;
+  color: #933;
   outline: none;
 }
-
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #F05F40;
+  background-color: #933;
 }
-
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
   background-color: #ed431f;
 }
-
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -601,7 +627,6 @@ img::-moz-selection {
     border-radius: 3px;
   }
 }
-
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: white;
@@ -624,7 +649,7 @@ img::-moz-selection {
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: #F05F40;
+	background: #933;
     color: white;
     font-weight: 500;
 	display: inline-block;
@@ -641,8 +666,9 @@ img::-moz-selection {
 	font-size: 16px;
 }
 
+
 #contact{
-    background-color: #F05F40;
+    background-color: #933;
     color: white;
 }
 
